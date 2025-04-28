@@ -13,7 +13,7 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash",
-    google_api_key="AIzaSyCxQOEEj1YWE7SaP1tMG3Ug_jwqYPIJpZI",
+    google_api_key=" ",
     streaming=True)
 embedding = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 persist_main_directory = "chroma_store"
